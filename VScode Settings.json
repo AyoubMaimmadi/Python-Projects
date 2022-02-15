@@ -1,0 +1,42 @@
+{
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "editor.minimap.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell -nologo": {
+      "source": "PowerShell",
+      "args": ["-nologo"]
+    }
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell -nologo",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": 1.8,
+  "editor.suggestSelection": "first",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.preferredHighContrastColorTheme": "Default Dark+",
+  "workbench.preferredLightColorTheme": "Default Dark+",
+  "workbench.editor.decorations.colors": true,
+  "workbench.preferredDarkColorTheme": "Default Light+",
+  "editor.fontSize": 16,
+  "editor.linkedEditing": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "editor.formatOnSave": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "json.maxItemsComputed": 10000,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.foldingMaximumRegions": 10000,
+  "git.enableSmartCommit": true,
+  "editor.quickSuggestions": true
+  // "editor.suggestOnTriggerCharacters": false,
+  // "editor.parameterHints.enabled": false
+}
