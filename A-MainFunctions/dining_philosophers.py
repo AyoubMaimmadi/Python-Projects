@@ -25,25 +25,25 @@ def philosophize(philosopher, max_num_eats=5):
         
         # Pick up fork and see if other fork is available.
         philosopher['left_fork'].set()
-        print(f'Philosopher {philosopher["name"]}  grabs left fork...')
+        print(f'Philosopher {philosopher["name"]}  grabs left fork')
 
         if philosopher['right_philosopher']['left_fork'].is_set():
             
-            print(f'Philosopher {philosopher["name"]} put down left fork...')
+            print(f'Philosopher {philosopher["name"]} put down left fork')
             philosopher['left_fork'].clear()
             continue
         
         philosopher['right_fork'].set()
-        print(f'Philosopher {philosopher["name"]} grabs left fork...')
+        print(f'Philosopher {philosopher["name"]} grabs left fork')
         
         philosopher['num_eats'] += 1
-        print(f'Philosopher {philosopher["name"]} is eating: {philosopher["num_eats"]}...')
+        print(f'Philosopher {philosopher["name"]} is eating: {philosopher["num_eats"]}')
         time.sleep(random.randint(1,3))
             
-        print(f'Philosopher {philosopher["name"]} put down left fork...')
+        print(f'Philosopher {philosopher["name"]} put down left fork')
         philosopher['left_fork'].clear()
 
-        print(f'Philosopher {philosopher["name"]} put down right fork...')
+        print(f'Philosopher {philosopher["name"]} put down right fork')
         philosopher['right_fork'].clear()
 
 philosophers = [philosopher_create(i) for i in range(1, 6)]
