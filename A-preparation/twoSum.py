@@ -20,6 +20,22 @@ def twoSum(arr, target):
     return  
 
 
+def twoSum2(arr, target): 
+    
+    l, r = 0, len(arr)-1
+
+    while l < r: 
+        if arr[l] + arr[r] > target:
+            r -= 1
+        elif arr[l] + arr[r] < target:
+            l += 1
+        else: 
+            return [l, r]
+
+
+A = [1, 2, 3, 5, 7]
+print(twoSum2(A, 5))
+    
 
 arr = [1,2,5,5,3,4,9]
 print(twoSum(arr, 8))
