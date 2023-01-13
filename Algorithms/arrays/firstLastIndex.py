@@ -39,7 +39,7 @@ def findEnd(arr, target):
 
 
 def firstLastIndexBinSearch(arr, target):
-    if len(arr) == 0:
+    if len(arr) == 0 or arr[0] > target or arr[-1] < target:
         return [-1, -1]
     else: 
         start = findStart(arr, target)
@@ -52,6 +52,6 @@ def firstLastIndexBinSearch(arr, target):
 A = [1, 3, 3, 3, 3, 3, 3, 5, 7, 8, 9]
 
 
-print("firstLastIndex: " , firstLastIndex(A, 3))
-print("firstLastIndexBinSearch: " , firstLastIndexBinSearch(A, 3))
+print("firstLastIndex -> O(n): " , firstLastIndex(A, 3))
+print("firstLastIndexBinSearch -> O(logn): " , firstLastIndexBinSearch(A, 3))
 
