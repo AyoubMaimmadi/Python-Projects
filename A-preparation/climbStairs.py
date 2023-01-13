@@ -9,4 +9,4 @@ def climbNumOfStairs(n):
     
     return one
 
-print(climbNumOfStairs(2))
+print(climbNumOfStairs(2)) # fib numbers
