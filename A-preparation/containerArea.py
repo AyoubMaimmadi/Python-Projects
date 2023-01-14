@@ -1,7 +1,7 @@
 nums = [1, 8, 6, 2, 5, 4, 8, 3, 7]
 
 def containerArea(list): 
-    res = 0
+    res = 0 #result 
     l, r = 0, len(list)-1
 
     while l < r:

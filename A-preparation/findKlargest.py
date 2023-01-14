@@ -16,17 +16,10 @@ def findKLargest(arr, k):
     if n == 0: 
         return False
 
-    #arr.sort()
-    bubbleSort(arr)
+    arr.sort()
+    # bubbleSort(arr)
 
     return arr[n - k]
-
-
-# Max heap
-def findKLargest1(arr, k):
-    pass
-
-
 
 
 def findKlargest2(arr, k):
@@ -37,9 +30,6 @@ def findKlargest2(arr, k):
 
 
 A = [4, 2, 9, 7, 5, 6, 3 ,7, 1, 3]
-
-
-
 
 print(findKLargest(A, 4))
 print(findKlargest2(A, 4))

@@ -3,7 +3,7 @@ def mergeTwoSortedLists(list1, list2):
     merged_list.extend(list1)
     merged_list.extend(list2)
     merged_list.sort()
-    merged_list.reverse()
+    # merged_list.reverse()
     return merged_list
 
 

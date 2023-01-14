@@ -9,6 +9,9 @@ def coinsNum(list, n):
     
 nums = [1,3,4,5]
 print(coinsNum(nums, 7))
+
+
+
              
 
 
