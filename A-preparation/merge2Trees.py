@@ -4,7 +4,7 @@ class TreeNode:
         self.left - left 
         self.right - right 
 
-class Solution: 
+class Solution:  # O(n + m)
     def mergeTrees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
         if not t1 and not t2:
             return None
