@@ -21,4 +21,4 @@ def sumOfSquares(n):
         n = n // 10
     return output
 
-print(isHappy(2))
+print(isHappy(19))
