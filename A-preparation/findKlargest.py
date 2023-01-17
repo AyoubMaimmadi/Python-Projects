@@ -10,15 +10,17 @@ def bubbleSort(arr):
 
     return arr
 
+
+def reverse_array(arr):
+    for i in range(len(arr) // 2):
+        arr[i], arr[-i - 1] = arr[-i - 1], arr[i]
+    return arr
+    
+
 def findKLargest(arr, k):
 
     n = len(arr)
-    if n == 0: 
-        return False
-
     arr.sort()
-    # bubbleSort(arr)
-
     return arr[n - k]
 
 
