@@ -16,7 +16,7 @@ def twoSum(arr, target):
         diff = target - n
         if diff in prevMap: 
             return [prevMap[diff], i]
-        prevMap[n] = i
+        prevMap[n] = i  # for the value n its index is i
     return  
 
 
