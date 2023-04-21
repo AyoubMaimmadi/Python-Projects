@@ -19,3 +19,10 @@ class Solution:
                 r = mid - 1
 
         return l
+        
+                                        
+def separateDigits(A):
+    return [int(c) for a in A for c in str(a)]
+
+print(separateDigits([13, 6, 85, 99, 100]))
+
